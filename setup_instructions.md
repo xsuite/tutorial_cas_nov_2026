@@ -10,7 +10,7 @@ See below the install instructions for WSL. If you already have a working WSL Li
 
 ### Install WSL
 
-Open PowerShell in administrator mode by right-clicking and selecting _Run as administrator_, enter the `wsl --install` command, then restart your machine. By default this will install an Ubuntu distribution in Windows. In the subsequent steps execute all commands in the Linux shell, which can be found by searching *WSL* or *Ubuntu* in the Start menu.
+Open PowerShell in administrator mode by right-clicking and selecting _Run as administrator_, enter the `wsl --install` command, then restart your machine. By default this will install an Ubuntu distribution in Windows. In the subsequent steps execute all commands in the Linux shell, which can be found by searching *Ubuntu* in the Start menu.
 
 For more information and troubleshooting see https://learn.microsoft.com/en-us/windows/wsl/install.
 
