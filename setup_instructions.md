@@ -6,7 +6,7 @@ In the Xsuite hands-on we will use Xsuite, in particular, for a smooth and consi
 
 Xsuite on Windows is supported through the Windows Subsystem for Linux (WSL). This requires admin rights to install (unless your administrator has already provided it on your system) and a couple GB of free disk space.
 
-See below the install instructions for WSL. If you already have a working WSL Linux distribution running on your machine, proceed to step 1, executing all the commands in the WSL prompt. If you neither have WSL, nor the ability to install it, please reach out to us to find an alternative solution.
+See below the install instructions for WSL. If you already have a working WSL Linux distribution running on your machine, proceed to step 1, executing all the commands in the WSL prompt. If you neither have WSL, nor the ability to install it, please reach out to us before the hands on to find an alternative solution.
 
 ### Install WSL
 
