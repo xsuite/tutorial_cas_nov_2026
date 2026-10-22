@@ -2,11 +2,21 @@
 
 In the Xsuite hands-on we will use Xsuite, in particular, for a smooth and consistent experience we recommend setting it up in a fresh conda environment. These instructions will walk you through the procedure. They largely mirror https://xsuite.readthedocs.io/, which you can also consult for more information.
 
-## Step 0 (only for Windows users): Set up WSL
+## Step 0: If you are on Windows
+
+Xsuite on Windows is supported through the Windows Subsystem for Linux (WSL). This requires admin rights to install (unless your administrator has already provided it on your system), and a few GB of free disk space.
+
+See below the install instructions for WSL. If you already have a working WSL Linux distribution running on your machine, proceed to step 1, executing all the commands in the WSL prompt. If you neither have WSL, nor the ability to install it, you can still do the hands on excercises using Google Colab: see Option B below.
+
+### Option A: Installing WSL
 
 Open PowerShell in administrator mode by right-clicking and selecting "Run as administrator", enter the `wsl --install` command, then restart your machine. By default this will install an Ubuntu distribution in Windows. In the subsequent steps execute all commands in the Linux shell, which can be found by searching *WSL* or *Ubuntu* in the Start menu.
 
 For more information and troubleshooting see https://learn.microsoft.com/en-us/windows/wsl/install.
+
+### Option B: Run in Google Colab
+
+Visit https://colab.research.google.com/ and log in with a Google account.
 
 ## Step 1: Install Miniforge
 
