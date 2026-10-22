@@ -76,4 +76,4 @@ tw.plot()
 
 If everything was successful, you should see a simple twiss plot appear:
 
-<img width="704" height="430" alt="twiss" src="https://gist.github.com/user-attachments/assets/8f99523e-272e-49a7-9d2a-917075e0004f" />
+![Example Twiss Plot](assets/instructions-twiss.png)
