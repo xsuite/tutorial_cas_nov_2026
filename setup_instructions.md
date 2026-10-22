@@ -8,7 +8,7 @@ Xsuite on Windows is supported through the Windows Subsystem for Linux (WSL). Th
 
 See below the install instructions for WSL. If you already have a working WSL Linux distribution running on your machine, proceed to step 1, executing all the commands in the WSL prompt. If you neither have WSL, nor the ability to install it, you can still do the hands on excercises using Google Colab: see Option B below.
 
-### Option A: Installing WSL
+### Option A: Install WSL
 
 Open PowerShell in administrator mode by right-clicking and selecting "Run as administrator", enter the `wsl --install` command, then restart your machine. By default this will install an Ubuntu distribution in Windows. In the subsequent steps execute all commands in the Linux shell, which can be found by searching *WSL* or *Ubuntu* in the Start menu.
 
@@ -16,7 +16,12 @@ For more information and troubleshooting see https://learn.microsoft.com/en-us/w
 
 ### Option B: Run in Google Colab
 
-Visit https://colab.research.google.com/ and log in with a Google account.
+Visit https://colab.research.google.com/ and log in with a Google account. Click _New notebook_ at the top, and once it's open paste `!pip install xsuite xplt` in the first cell. Execute the cell and wait for the message saying `Successfully installed ...`. You can now skip to Step 4, and where you should see the same plot.
+
+> [!NOTE]
+> In case you get an error about not being connected to a runtime, click on the small arrow next to the _Reconnect_ button in the top right corner, select _Change runtime type_, make sure _Python 3_, _CPU_, and _Latest_ are the selected options, click _Save_, and then the _Reconnect_ button.
+
+In the hands on, you will be able to open tutorial notebooks through the _Upload notebook_ option: select _GitHub_, paste `xsuite/tutorial_cas_nov_2026` in the search box, and the list of tutorial notebooks available to run will appear (you can try this in advance with the `test_your_install.ipynb` notebook). Once you open a notebook, don't forget to first run `!pip install xsuite xplt` to install Xsuite: you will need to repeat this step for each notebook.
 
 ## Step 1: Install Miniforge
 
