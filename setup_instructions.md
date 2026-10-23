@@ -1,6 +1,6 @@
-# Xsuite CAS Setup Instructions
+# Xsuite CAS Hands-On Setup Instructions
 
-In the Xsuite hands-on we will use Xsuite, in particular, for a smooth and consistent experience we recommend setting it up in a fresh conda environment. These instructions will walk you through the procedure. They largely mirror https://xsuite.readthedocs.io/, which you can also consult for more information.
+In the hands-on we will use Xsuite, in particular, for a smooth and consistent experience we recommend setting it up in a fresh conda environment. These instructions will walk you through the procedure. They largely mirror https://xsuite.readthedocs.io/, which you can also consult for more information.
 
 ## Step 0: If you are on Windows
 
