@@ -23,7 +23,12 @@ curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Mi
 bash Miniforge3-$(uname)-$(uname -m).sh
 ```
 
-The installation process will ask you a few questions. Answer `yes` to accept the licence terms, and specify your preferred conda installation location: the default is fine. You should answer `yes` to initialising your default shell. (It's okay to run the suggested command to disable auto-activation of the base environment in your shell if you'd like.) Restart your shell (searching for _Ubuntu_ in the Start menu) for the changes to take effect.
+The installation process will ask you a few questions.
+
+1. Answer `yes` to accept the licence terms, and specify your preferred conda installation location: the default is fine.
+2. You should answer `yes` to initialising your default shell. (If you miss it and the default is no, the error message when you try to _activate_ later on will guide you on what to do.)
+3. (It's okay to run the suggested command to disable auto-activation of the base environment in your shell if you'd like.)
+4. Restart your shell (searching for _Ubuntu_ in the Start menu) for the changes to take effect.
 
 ## Step 2: Create a new conda environment
 
