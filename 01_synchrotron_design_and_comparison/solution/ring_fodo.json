@@ -1,0 +1,1885 @@
+{
+ "__class__": "Line",
+ "_extra_config": {
+  "_beamstrahlung_model": null,
+  "_bhabha_model": null,
+  "_needs_rng": false,
+  "_radiation_model": null,
+  "_spin_model": null,
+  "_t_last_update_time_dependent_vars": null,
+  "corrector_limits_x": null,
+  "corrector_limits_y": null,
+  "dt_update_time_dependent_vars": 0.0,
+  "enable_time_dependent_vars": false,
+  "end_compose_on_reload": true,
+  "matrix_responsiveness_tol": 1e-15,
+  "matrix_stability_tol": 0.002,
+  "reset_s_at_end_turn": true,
+  "skip_end_turn_actions": false,
+  "steering_correctors_x": null,
+  "steering_correctors_y": null,
+  "steering_monitors_x": null,
+  "steering_monitors_y": null,
+  "twiss_default": {}
+ },
+ "_var_management_data": {
+  "functions": {
+   "_funcs": {}
+  },
+  "var_values": {
+   "__vary_default": {},
+   "angle_bend": 0.19634954084936207,
+   "kqd": -0.6420911963242509,
+   "kqf": 0.6127087481442851,
+   "ksd": -0.5617659833904547,
+   "ksf": 0.2785321169208282,
+   "l_bend": 4.0,
+   "l_cell": 15.0,
+   "l_quad": 0.3,
+   "l_sext": 0.2,
+   "t_turn_s": 0.0
+  }
+ },
+ "_var_manager": [
+  [
+   "element_refs['bend'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['qf'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qd'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['sf'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sd'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sf.0'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.0'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.1'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.1'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.2'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.2'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.3'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.3'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.4'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.4'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.5'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.5'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.6'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.6'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.7'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.7'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.8'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.8'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.9'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.9'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.10'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.10'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.11'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.11'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.12'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.12'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.13'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.13'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.14'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.14'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['sf.15'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sf.15'].k2",
+   "vars['ksf']"
+  ],
+  [
+   "element_refs['bend.0'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.0'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.1'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.1'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.2'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.2'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.3'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.3'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.4'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.4'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.5'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.5'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.6'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.6'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.7'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.7'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.8'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.8'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.9'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.9'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.10'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.10'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.11'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.11'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.12'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.12'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.13'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.13'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.14'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.14'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.15'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.15'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.16'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.16'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.17'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.17'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.18'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.18'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.19'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.19'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.20'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.20'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.21'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.21'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.22'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.22'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.23'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.23'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.24'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.24'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.25'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.25'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.26'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.26'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.27'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.27'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.28'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.28'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.29'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.29'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.30'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.30'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['bend.31'].length",
+   "vars['l_bend']"
+  ],
+  [
+   "element_refs['bend.31'].angle",
+   "vars['angle_bend']"
+  ],
+  [
+   "element_refs['sd.0'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.0'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.1'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.1'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.2'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.2'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.3'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.3'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.4'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.4'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.5'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.5'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.6'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.6'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.7'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.7'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.8'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.8'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.9'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.9'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.10'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.10'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.11'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.11'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.12'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.12'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.13'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.13'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.14'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.14'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['sd.15'].length",
+   "vars['l_sext']"
+  ],
+  [
+   "element_refs['sd.15'].k2",
+   "vars['ksd']"
+  ],
+  [
+   "element_refs['qd.0'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.0'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.1'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.1'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.2'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.2'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.3'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.3'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.4'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.4'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.5'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.5'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.6'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.6'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.7'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.7'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.8'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.8'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.9'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.9'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.10'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.10'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.11'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.11'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.12'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.12'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.13'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.13'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.14'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.14'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qd.15'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qd.15'].k1",
+   "vars['kqd']"
+  ],
+  [
+   "element_refs['qf.0'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.0'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.1'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.1'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.2'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.2'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.3'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.3'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.4'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.4'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.5'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.5'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.6'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.6'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.7'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.7'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.8'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.8'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.9'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.9'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.10'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.10'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.11'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.11'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.12'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.12'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.13'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.13'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.14'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.14'].k1",
+   "vars['kqf']"
+  ],
+  [
+   "element_refs['qf.15'].length",
+   "vars['l_quad']"
+  ],
+  [
+   "element_refs['qf.15'].k1",
+   "vars['kqf']"
+  ]
+ ],
+ "composer": {
+  "__class__": "Composer",
+  "components": [],
+  "refer": "center",
+  "s_tol": 1e-06
+ },
+ "config": {
+  "XFIELDS_BB3D_NO_BEAMSTR": true,
+  "XFIELDS_BB3D_NO_BHABHA": true,
+  "XTRACK_GLOBAL_XY_LIMIT": 1.0,
+  "XTRACK_MULTIPOLE_NO_SYNRAD": true
+ },
+ "element_names": [
+  "qf.0",
+  "||drift_1",
+  "sf.0",
+  "||drift_2",
+  "bend.0",
+  "||drift_3",
+  "qd.0",
+  "||drift_4",
+  "sd.0",
+  "||drift_2",
+  "bend.1",
+  "||drift_3",
+  "qf.1",
+  "||drift_1",
+  "sf.1",
+  "||drift_2",
+  "bend.2",
+  "||drift_3",
+  "qd.1",
+  "||drift_4",
+  "sd.1",
+  "||drift_2",
+  "bend.3",
+  "||drift_3",
+  "qf.2",
+  "||drift_1",
+  "sf.2",
+  "||drift_2",
+  "bend.4",
+  "||drift_3",
+  "qd.2",
+  "||drift_4",
+  "sd.2",
+  "||drift_2",
+  "bend.5",
+  "||drift_3",
+  "qf.3",
+  "||drift_1",
+  "sf.3",
+  "||drift_2",
+  "bend.6",
+  "||drift_3",
+  "qd.3",
+  "||drift_4",
+  "sd.3",
+  "||drift_2",
+  "bend.7",
+  "||drift_3",
+  "qf.4",
+  "||drift_1",
+  "sf.4",
+  "||drift_2",
+  "bend.8",
+  "||drift_3",
+  "qd.4",
+  "||drift_4",
+  "sd.4",
+  "||drift_2",
+  "bend.9",
+  "||drift_3",
+  "qf.5",
+  "||drift_1",
+  "sf.5",
+  "||drift_2",
+  "bend.10",
+  "||drift_3",
+  "qd.5",
+  "||drift_4",
+  "sd.5",
+  "||drift_2",
+  "bend.11",
+  "||drift_3",
+  "qf.6",
+  "||drift_1",
+  "sf.6",
+  "||drift_2",
+  "bend.12",
+  "||drift_3",
+  "qd.6",
+  "||drift_4",
+  "sd.6",
+  "||drift_2",
+  "bend.13",
+  "||drift_3",
+  "qf.7",
+  "||drift_1",
+  "sf.7",
+  "||drift_2",
+  "bend.14",
+  "||drift_3",
+  "qd.7",
+  "||drift_4",
+  "sd.7",
+  "||drift_2",
+  "bend.15",
+  "||drift_3",
+  "qf.8",
+  "||drift_1",
+  "sf.8",
+  "||drift_2",
+  "bend.16",
+  "||drift_3",
+  "qd.8",
+  "||drift_4",
+  "sd.8",
+  "||drift_2",
+  "bend.17",
+  "||drift_3",
+  "qf.9",
+  "||drift_1",
+  "sf.9",
+  "||drift_2",
+  "bend.18",
+  "||drift_3",
+  "qd.9",
+  "||drift_4",
+  "sd.9",
+  "||drift_2",
+  "bend.19",
+  "||drift_3",
+  "qf.10",
+  "||drift_1",
+  "sf.10",
+  "||drift_2",
+  "bend.20",
+  "||drift_3",
+  "qd.10",
+  "||drift_4",
+  "sd.10",
+  "||drift_2",
+  "bend.21",
+  "||drift_3",
+  "qf.11",
+  "||drift_1",
+  "sf.11",
+  "||drift_2",
+  "bend.22",
+  "||drift_3",
+  "qd.11",
+  "||drift_4",
+  "sd.11",
+  "||drift_2",
+  "bend.23",
+  "||drift_3",
+  "qf.12",
+  "||drift_1",
+  "sf.12",
+  "||drift_2",
+  "bend.24",
+  "||drift_3",
+  "qd.12",
+  "||drift_4",
+  "sd.12",
+  "||drift_2",
+  "bend.25",
+  "||drift_3",
+  "qf.13",
+  "||drift_1",
+  "sf.13",
+  "||drift_2",
+  "bend.26",
+  "||drift_3",
+  "qd.13",
+  "||drift_4",
+  "sd.13",
+  "||drift_2",
+  "bend.27",
+  "||drift_3",
+  "qf.14",
+  "||drift_1",
+  "sf.14",
+  "||drift_2",
+  "bend.28",
+  "||drift_3",
+  "qd.14",
+  "||drift_4",
+  "sd.14",
+  "||drift_2",
+  "bend.29",
+  "||drift_3",
+  "qf.15",
+  "||drift_1",
+  "sf.15",
+  "||drift_2",
+  "bend.30",
+  "||drift_3",
+  "qd.15",
+  "||drift_4",
+  "sd.15",
+  "||drift_2",
+  "bend.31",
+  "||drift_3"
+ ],
+ "elements": {
+  "bend": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5
+  },
+  "bend.0": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.1": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.10": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.11": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.12": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.13": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.14": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.15": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.16": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.17": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.18": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.19": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.2": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.20": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.21": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.22": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.23": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.24": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.25": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.26": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.27": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.28": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.29": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.3": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.30": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.31": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.4": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.5": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.6": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.7": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.8": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "bend.9": {
+   "__class__": "Bend",
+   "angle": 0.19634954084936207,
+   "length": 4.0,
+   "order": 5,
+   "prototype": "bend"
+  },
+  "qd": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5
+  },
+  "qd.0": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.1": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.10": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.11": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.12": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.13": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.14": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.15": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.2": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.3": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.4": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.5": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.6": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.7": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.8": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qd.9": {
+   "__class__": "Quadrupole",
+   "k1": -0.6420911963242509,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qd"
+  },
+  "qf": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5
+  },
+  "qf.0": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.1": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.10": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.11": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.12": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.13": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.14": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.15": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.2": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.3": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.4": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.5": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.6": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.7": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.8": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "qf.9": {
+   "__class__": "Quadrupole",
+   "k1": 0.6127087481442851,
+   "length": 0.3,
+   "order": 5,
+   "prototype": "qf"
+  },
+  "sd": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5
+  },
+  "sd.0": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.1": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.10": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.11": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.12": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.13": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.14": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.15": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.2": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.3": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.4": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.5": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.6": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.7": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.8": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sd.9": {
+   "__class__": "Sextupole",
+   "k2": -0.5617659833904547,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sd"
+  },
+  "sf": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5
+  },
+  "sf.0": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.1": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.10": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.11": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.12": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.13": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.14": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.15": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.2": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.3": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.4": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.5": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.6": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.7": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.8": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "sf.9": {
+   "__class__": "Sextupole",
+   "k2": 0.2785321169208282,
+   "length": 0.2,
+   "order": 5,
+   "prototype": "sf"
+  },
+  "||drift_1": {
+   "__class__": "Drift",
+   "length": 0.2
+  },
+  "||drift_2": {
+   "__class__": "Drift",
+   "length": 1.0500000000000007
+  },
+  "||drift_3": {
+   "__class__": "Drift",
+   "length": 1.75
+  },
+  "||drift_4": {
+   "__class__": "Drift",
+   "length": 0.20000000000000018
+  }
+ },
+ "env_particles": {},
+ "metadata": {},
+ "mode": "normal",
+ "particle_ref": {
+  "_rng_s1": [
+   0
+  ],
+  "_rng_s2": [
+   0
+  ],
+  "_rng_s3": [
+   0
+  ],
+  "_rng_s4": [
+   0
+  ],
+  "anomalous_magnetic_moment": [
+   0.0
+  ],
+  "at_element": [
+   0
+  ],
+  "at_turn": [
+   0
+  ],
+  "ax": [
+   0.0
+  ],
+  "ay": [
+   0.0
+  ],
+  "beta0": [
+   0.999999954823541
+  ],
+  "charge_ratio": [
+   1.0
+  ],
+  "chi": [
+   1.0
+  ],
+  "delta": [
+   0.0
+  ],
+  "gamma0": [
+   3326.817007558423
+  ],
+  "mass0": 510998.95069,
+  "p0c": [
+   1699999923.2000196
+  ],
+  "parent_particle_id": [
+   0
+  ],
+  "particle_id": [
+   0
+  ],
+  "pdg_id": [
+   11
+  ],
+  "px": [
+   0.0
+  ],
+  "py": [
+   0.0
+  ],
+  "pzeta": [
+   0.0
+  ],
+  "q0": -1.0,
+  "reference_turns": NaN,
+  "rpp": [
+   1.0
+  ],
+  "rvv": [
+   1.0
+  ],
+  "s": [
+   0.0
+  ],
+  "spin_x": [
+   0.0
+  ],
+  "spin_y": [
+   0.0
+  ],
+  "spin_z": [
+   0.0
+  ],
+  "start_tracking_at_element": -1,
+  "state": [
+   1
+  ],
+  "weight": [
+   1.0
+  ],
+  "x": [
+   0.0
+  ],
+  "y": [
+   0.0
+  ],
+  "zeta": [
+   0.0
+  ]
+ },
+ "xtrack_version": "0.118.6"
+}
